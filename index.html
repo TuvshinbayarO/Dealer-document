@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>DealerApp Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="GFX Partner">
+
+  <!-- Le styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./dealer_new_icon-removebg-preview.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dealer_new_icon-removebg-preview.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./dealer_new_icon-removebg-preview.png">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-spy="scroll" id="top">
+
+  <!-- Documentation Navbar -->
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container"> 
+        <div class="bar">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+            <a class="brand" href="#" style="display: flex; align-items: center; gap: 20px;">
+                <img src="./dealer_new_icon-removebg-preview.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><a href="#top" class="active-el">Home</a></li>
+            <li><a href="#install">Installation</a></li>
+            <!-- <li><a href="#features">Features</a></li> -->
+          </ul>
+          <script>
+            document.addEventListener('click', (e) => {
+              if ( e.target.matches('.nav a') ) {
+                let active = document.querySelector('.active-el');
+                active.classList.remove('active-el');
+                e.target.classList.add('active-el');
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Navbar -->
+
+  <!-- Main Container Beginning -->
+
+  <div class="container page-container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="masthead" id="top">
+          <h1>Dealer App</h1>
+          <br>
+          <p class="marketing-byline">Created &hearts; by <a href="https://www.mobicom.mn/">Mobicom</a>
+          </p>
+          <div class="preview-container">
+            <img src="./simulator_screenshot_D37E0D37-955A-460D-9708-766430F494B3.png" alt="Image" class="preview">
+          </div>
+    
+          <h1>Dealer App бол бизнес эрхлэгчид, агентлагууд шинэ нүүр царай өгөх зорилготойгоор бүтээгдсэн дээд зэрэглэлийн application юм.</h1>
+        </div>
+        <!-- masthead -->
+    
+        <div id="intro">
+          <p class="highlight hero-unit">Хэрэв танд өөр асуулт байвал <strong>Tuvshinbayar.o@mobicom.mn</strong> Email илгээнэ үү!<a
+              href="mailto:tuvshinbayar.o@mobicom.mn">here</a>.</p>
+        </div>
+        <!-- intro -->
+    
+        <section id="install">
+            <div class="page-header">
+              <h1>Installation <small>Application requirement</small></h1>
+            </div>
+      
+            <div class="row">
+              <div class="span3">
+                <h2>Алхам 1</h2>
+                <p>Node суулгах</p>
+              </div>
+              <div class="span9">
+                <p>
+                  Та Node болон NPM систем дээрээ суулгасан эсэхийг шалгах хэрэгтэй. Хэрэв тэдгээрийг суулгаагүй бол <a href="https://nodejs.org/en/">эндээс татаж авах боломжтой.</a>
+                </p>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="span3">
+                <h2>Алхам 2</h2>
+                <p>Node modules суулгах</p>
+              </div>
+              <div class="span9">
+                <p>
+                  Node modules хамааралтай node modules суулгахын тулд та dealerapp хавтсанд терминалыг нээж дараахь зүйлийг бичих хэрэгтэй. тушаал. Үүнд хэсэг хугацаа зарцуулагдаж магадгүй.
+                  <pre class="prettyprint linenums">
+      npm install</pre>
+                </p>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="span3">
+                <h2>Алхам 3</h2>
+                <p>Starting DealerApp</p>
+              </div>
+              <div class="span9">
+                <p>
+                  DealerApp програмыг эхлүүлж байна
+                  Програмыг эхлүүлэхийн тулд. Та терминалд дараах коммандыг оруулах шаардлагатай. Хэдэн секундын дараа Android эсвэл Ios Simulator Ажиллана
+                  <pre class="prettyprint linenums">
+      npx expo start</pre>
+                </p>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="span3">
+                <h2>Алхам 4</h2>
+                <p>Aab build</p>
+              </div>
+              <div class="span9">
+                <p>
+                  Та aab build гаргахдаа дараах коммандыг терминалд бичиж өгнө
+                  <pre class="prettyprint linenums">
+                    cd android && ./gradlew clean && ./gradlew bundleRelease</pre>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="span3">
+                <h2>Алхам 5</h2>
+                <p>Apk build</p>
+              </div>
+              <div class="span9">
+                <p>
+                  Та apk build гаргахдаа дараах коммандыг терминалд бичиж өгнө
+                  <pre class="prettyprint linenums">
+                    npm run android -- --mode="release"</pre>
+                </p>
+              </div>
+            </div>
+            
+        </section>
+        <hr />
+        <!-- <section id="features">
+            <div class="page-header">
+              <h1>Features</h1>
+            </div>
+            <ul>
+              <li>Animated Preloader Section</li>
+              <li>Premium Creative Design</li>
+              <li>Fully Responsive</li>
+              <li>Soft Page Transition</li>
+              <li>Amazing Hamburger Menu</li>
+              <li>Amazing Fullscreen Navigation</li>
+              <li>Flowless CSS transition</li>
+              <li>Cross browsers support</li>
+              <li>Retina ready</li>
+              <li>Parallax backgrounds</li>
+              <li>Google fonts</li>
+              <li>Free quick support</li>
+            </ul>
+        </section> -->
+        <!-- <div class="goodbye">
+          <p>Once again, thanks for purchasing this template and if you have any questions relating to this template, feel free to ask them as we will be more than happy to help you.</p>
+        </div> -->
+        <hr />
+        <footer>
+          <p>&copy; 2023 - Tuvshinbayar</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+
+  <!-- Le javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/bootstrap-transition.js"></script>
+  <script src="assets/js/bootstrap-alert.js"></script>
+  <script src="assets/js/bootstrap-modal.js"></script>
+  <script src="assets/js/bootstrap-dropdown.js"></script>
+  <script src="assets/js/bootstrap-scrollspy.js"></script>
+  <script src="assets/js/bootstrap-tab.js"></script>
+  <script src="assets/js/bootstrap-tooltip.js"></script>
+  <script src="assets/js/bootstrap-popover.js"></script>
+  <script src="assets/js/bootstrap-button.js"></script>
+  <script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+
+</html>
