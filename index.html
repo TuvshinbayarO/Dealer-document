@@ -8,7 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="GFX Partner">
 
-  <!-- Le styles -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -18,36 +17,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./dealer_new_icon-removebg-preview.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./dealer_new_icon-removebg-preview.png">
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
 </head>
 
 <body data-spy="scroll" id="top">
 
-  <!-- Documentation Navbar -->
-
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container"> 
+      <div class="container">
         <div class="bar">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
-            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
-            <a class="brand" href="#" style="display: flex; align-items: center; gap: 20px;">
-                <img src="./dealer_new_icon-removebg-preview.png" alt="logo">
-            </a>
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+          <a class="brand" href="#" style="display: flex; align-items: center; gap: 20px;">
+            <img src="./dealer_new_icon-removebg-preview.png" alt="logo">
+          </a>
         </div>
         <div class="nav-collapse">
           <ul class="nav">
             <li><a href="#top" class="active-el">Home</a></li>
             <li><a href="#install">Installation</a></li>
-            <!-- <li><a href="#features">Features</a></li> -->
           </ul>
           <script>
             document.addEventListener('click', (e) => {
-              if ( e.target.matches('.nav a') ) {
+              if (e.target.matches('.nav a')) {
                 let active = document.querySelector('.active-el');
                 active.classList.remove('active-el');
                 e.target.classList.add('active-el');
@@ -58,9 +49,6 @@
       </div>
     </div>
   </div>
-  <!-- End of Navbar -->
-
-  <!-- Main Container Beginning -->
 
   <div class="container page-container">
     <div class="row">
@@ -73,114 +61,185 @@
           <div class="preview-container">
             <img src="./simulator_screenshot_D37E0D37-955A-460D-9708-766430F494B3.png" alt="Image" class="preview">
           </div>
-    
-          <h1>Dealer App бол бизнес эрхлэгчид, агентлагууд шинэ нүүр царай өгөх зорилготойгоор бүтээгдсэн дээд зэрэглэлийн application юм.</h1>
+
+          <h1>Dealer App бол бизнес эрхлэгчид, агентлагууд шинэ нүүр царай өгөх зорилготойгоор бүтээгдсэн дээд
+            зэрэглэлийн application юм.</h1>
         </div>
-        <!-- masthead -->
-    
+
+
         <div id="intro">
-          <p class="highlight hero-unit">Хэрэв танд өөр асуулт байвал <strong>Tuvshinbayar.o@mobicom.mn</strong> Email илгээнэ үү!<a
-              href="mailto:tuvshinbayar.o@mobicom.mn">here</a>.</p>
+          <p class="highlight hero-unit">Хэрэв танд өөр асуулт байвал <strong>Tuvshinbayar.o@mobicom.mn</strong> Email
+            илгээнэ үү!<a href="mailto:tuvshinbayar.o@mobicom.mn">here</a>.</p>
         </div>
-        <!-- intro -->
-    
+        
+
         <section id="install">
-            <div class="page-header">
-              <h1>Installation <small>Application requirement</small></h1>
+          <div class="page-header">
+            <h1>Installation <small>Application requirement</small></h1>
+          </div>
+
+          <div class="row">
+            <div class="span3">
+              <h2>Танилцуулга</h2>
+              <!-- <p>Node суулгах</p> -->
             </div>
-      
-            <div class="row">
-              <div class="span3">
-                <h2>Алхам 1</h2>
-                <p>Node суулгах</p>
-              </div>
-              <div class="span9">
-                <p>
-                  Та Node болон NPM систем дээрээ суулгасан эсэхийг шалгах хэрэгтэй. Хэрэв тэдгээрийг суулгаагүй бол <a href="https://nodejs.org/en/">эндээс татаж авах боломжтой.</a>
-                </p>
-              </div>
+            <div class="span9">
+              <p>
+                Dealer App нь expo SDK48 болон React Vesion 18.2.0 дээр last байдлаар update хийсэн! <br>
+                Дэмжигдэх үйлдийн систем: Android version 5+ & Ios version 13+
+              </p>
             </div>
-      
-            <div class="row">
-              <div class="span3">
-                <h2>Алхам 2</h2>
-                <p>Node modules суулгах</p>
-              </div>
-              <div class="span9">
-                <p>
-                  Node modules хамааралтай node modules суулгахын тулд та dealerapp хавтсанд терминалыг нээж дараахь зүйлийг бичих хэрэгтэй. тушаал. Үүнд хэсэг хугацаа зарцуулагдаж магадгүй.
-                  <pre class="prettyprint linenums">
+          </div>
+
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 1</h2>
+              <p>Node суулгах</p>
+            </div>
+            <div class="span9">
+              <p>
+                Та Node болон NPM систем дээрээ суулгасан эсэхийг шалгах хэрэгтэй. Хэрэв тэдгээрийг суулгаагүй бол <a
+                  href="https://nodejs.org/en/">эндээс татаж авах боломжтой.</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 2</h2>
+              <p>Node modules суулгах</p>
+            </div>
+            <div class="span9">
+              <p>
+                Node modules хамааралтай node modules суулгахын тулд та dealerapp хавтсанд терминалыг нээж дараахь
+                зүйлийг бичих хэрэгтэй. тушаал. Үүнд хэсэг хугацаа зарцуулагдаж магадгүй.
+              <pre class="prettyprint linenums">
       npm install</pre>
-                </p>
-              </div>
+              </p>
             </div>
-      
-            <div class="row">
-              <div class="span3">
-                <h2>Алхам 3</h2>
-                <p>Starting DealerApp</p>
-              </div>
-              <div class="span9">
-                <p>
-                  DealerApp програмыг эхлүүлж байна
-                  Програмыг эхлүүлэхийн тулд. Та терминалд дараах коммандыг оруулах шаардлагатай. Хэдэн секундын дараа Android эсвэл Ios Simulator Ажиллана
-                  <pre class="prettyprint linenums">
+          </div>
+
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 3</h2>
+              <p>Starting DealerApp</p>
+            </div>
+            <div class="span9">
+              <p>
+                DealerApp програмыг эхлүүлж байна
+                Програмыг эхлүүлэхийн тулд. Та терминалд дараах коммандыг оруулах шаардлагатай. Хэдэн секундын дараа
+                Android эсвэл Ios Simulator Ажиллана
+              <pre class="prettyprint linenums">
       npx expo start</pre>
-                </p>
-              </div>
+              </p>
             </div>
-      
-            <div class="row">
-              <div class="span3">
-                <h2>Алхам 4</h2>
-                <p>Aab build</p>
-              </div>
-              <div class="span9">
-                <p>
-                  Та aab build гаргахдаа дараах коммандыг терминалд бичиж өгнө
-                  <pre class="prettyprint linenums">
+          </div>
+
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 4</h2>
+              <p>Aab build</p>
+            </div>
+            <div class="span9">
+              <p>
+                Та aab build гаргахдаа дараах коммандыг терминалд бичиж өгнө
+              <pre class="prettyprint linenums">
                     cd android && ./gradlew clean && ./gradlew bundleRelease</pre>
-                </p>
-              </div>
+              </p>
             </div>
-            <div class="row">
-              <div class="span3">
-                <h2>Алхам 5</h2>
-                <p>Apk build</p>
-              </div>
-              <div class="span9">
-                <p>
-                  Та apk build гаргахдаа дараах коммандыг терминалд бичиж өгнө
-                  <pre class="prettyprint linenums">
+          </div>
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 5</h2>
+              <p>Apk build</p>
+            </div>
+            <div class="span9">
+              <p>
+                Та apk build гаргахдаа дараах коммандыг терминалд бичиж өгнө
+              <pre class="prettyprint linenums">
                     npm run android -- --mode="release"</pre>
-                </p>
-              </div>
+              </p>
             </div>
-            
+          </div>
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 7</h2>
+              <p>Test Flight apk гаргах</p>
+            </div>
+            <div class="span9">
+              <p>
+              <p>
+                TestFlight нь Apple-ийн официал аппликейшн тестлэгийн платформ бөгөөд бүх iOS байгуулагдсан
+                аппликейшнуудыг зөвхөн зарим хэрэглэгчидэд туршлага хийж, санал хүсэлтүүд авч турших боломжийг олгоно.
+                Та Expo ашиглан аппликейшн бэлтгэхэд, тестлэгийн алхам рүү орохоор эхлээд хэрхэн бүртгүүлэх, турших,
+                засварлах талаар мэдээллээ авахыг харуулж байна.
+                Дараах зааврыг дагаж мөн биш болгоно уу:
+              </p>
+              <pre class="prettyprint linenums">
+                    expo build:ios</pre>
+              <p>
+                TestFlight-руу аппликейшн оруулах: Expo бэлтгэсэн проектын бүртгэл дээр хамгийн сүүлийн аппликейшны
+                байгууллагын нэрийг дамжуулж, аппликейшныг тестлэгийн алхам рүү оруулах шаардлагатай. Хамгийн сүүлийн
+                аппликейшн нэг хоногийн дотор TestFlight-д харуулагдана.
+
+                Тестлэгийн санал хүсэлтүүд авах: TestFlight рүү орж, тестлэгийн санал хүсэлтүүдийг хяналтад оруулж,
+                аппликейшнд гарч ирсэн алдаануудыг шалгана. Тэдгээрийг бүртгэсэн ажлын хэрэглэгчид аппликейшн болон
+                тестлэгийн алхам рүү орж, туршиж болно.
+              </p>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3">
+              <h2>Алхам 8</h2>
+              <p>PlayStore publish</p>
+            </div>
+            <div class="span9">
+              <p>
+                1. Google Play Developer Console-руу нэвтрэх: Эхлээд Google Play Developer Console-руу орох
+                шаардлагатай. Та Google Play Developer болон хэрэглэгчийн мэдээллийг ашиглан нэвтэрнэ.<br>
+
+                2. Аппликэйшний мэдээлэл оруулах: Дэлгэрэнгүй мэдээллийг ашиглан аппликэйшний мэдээлэл оруулна. Энэ
+                хэсгээр аппликэйшний нэр, верс, тайлбар, зураг, шинэчлэл, багцын мэдээлэл, төрөл болон бусад мэдээллийг
+                оруулна.<br>
+
+                3. AAB файл оруулах: Таны аппликэйшний кодыг агуулсан APK (Android Package) файлыг оруулна. Энэ файл нь
+                аппликэйшнийг суулгаж, ажиллуулах код, шошго, зураг, зургийн тодорхой мэдээлэл болон бусад боломжуудыг
+                агуулсан бөгөөд хэмжээ нь таны аппликэйшний төрлийн дагуу өөрчилнө. <br>
+
+                4. Туршилтын мэдээлэл оруулах: Аппликэйшний хяналтын тайлбар, зураг, видео, холбоос, туршилтын агуулга
+                болон бусад мэдээллийг оруулна. Эдгээр мэдээллийг хэрэгтэй хэлбэрээр оруулж болно.<br>
+
+                5. Зарлага болон төлбөрийн мэдээлэл оруулах: Та Play Store-д таны аппликэйшний хэрэглэгчид хэрхэн төлбөр
+                төлөх боломжтойг тодорхойлох зарлага, төлбөрийн арга харгалзах мэдээллийг оруулна. <br>
+
+                6. Техникийн мэдээлэл оруулах: Аппликэйшний ажиллагааны зориулалтыг тайлбарлан тодорхойлох техникийн
+                мэдээлэл, аппликэйшний хэрэглэгчдэд хэрхэн ажилладаг талаарх мэдээллийг оруулна.<br>
+
+                7. Аппликэйшний хяналтын төлбөрийг тохируулах: Та Play Store-д аппликэйшнийг худалдаалж авах төлбөрийн
+                болон хяналтын төлбөрүүдийг тохируулж болно.<br>
+
+                8. Аппликэйшнийг хэрхэн ашиглахыг тайлбарлах: Та аппликэйшнийг хэрхэн ашиглах талаар хэрэглэгчиддээ
+                илтгэл үзүүлэх тайлбарлага болон зурвас оруулах боломжтой.<br>
+
+                9. Нийтлэл, зурвас болон тусламж оруулах: Таны аппликэйшний талаарх нийтлэл, зурвас, тусламж, сэтгэгдэл
+                болон бусад мэдээллийг оруулж болно.<br>
+
+                10. Аппликэйшнийг нэвтрүүлэх хувь хүний мэдээллийг тохируулах: Та аппликэйшнийг ашиглах хэрэгтэй хувь
+                хүний мэдээллийг тохируулж болно.<br>
+
+                11. Туршилтын тайлбар, зурвас, төлбөр болон зөвлөгөө оруулах: Таны аппликэйшнийг хэрхэн суулгах,
+                ашиглах, хэрэглэгчдэд зөвлөгөө үзүүлэх талаарх тайлбар, зурвас, төлбөр болон зөвлөгөөг оруулж болно.<br>
+
+                12. Аппликэйшнийг шинэчлэх болон байхгүй болгох: Та аппликэйшнийг шинэчлэх, засах эсвэл
+              <pre class="prettyprint linenums">
+                    AAB file хуулах</pre>
+              </p>
+            </div>
+          </div>
+
         </section>
         <hr />
-        <!-- <section id="features">
-            <div class="page-header">
-              <h1>Features</h1>
-            </div>
-            <ul>
-              <li>Animated Preloader Section</li>
-              <li>Premium Creative Design</li>
-              <li>Fully Responsive</li>
-              <li>Soft Page Transition</li>
-              <li>Amazing Hamburger Menu</li>
-              <li>Amazing Fullscreen Navigation</li>
-              <li>Flowless CSS transition</li>
-              <li>Cross browsers support</li>
-              <li>Retina ready</li>
-              <li>Parallax backgrounds</li>
-              <li>Google fonts</li>
-              <li>Free quick support</li>
-            </ul>
-        </section> -->
-        <!-- <div class="goodbye">
-          <p>Once again, thanks for purchasing this template and if you have any questions relating to this template, feel free to ask them as we will be more than happy to help you.</p>
-        </div> -->
         <hr />
         <footer>
           <p>&copy; 2023 - Tuvshinbayar</p>
@@ -188,11 +247,6 @@
       </div>
     </div>
   </div>
-  <!-- /container -->
-
-  <!-- Le javascript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/google-code-prettify/prettify.js"></script>
